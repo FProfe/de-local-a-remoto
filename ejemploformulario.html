@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos de formularios</title>
+  </head>
+  <body>
+    <form method="post" action="#">
+        <label for="id_nombre">Nombre de Usuario</label>
+        <input type="text" name="nombre" id="id_nombre" value="Escriba aqui su nombre">
+        <br>
+        <textarea name="describir" id="id_describir" rows="20" cols="50">Valor por defecto
+
+        </textarea>
+        <br>
+        <label for="id_correo">Escribe tu correo</label>
+        <input type="email" id="id_correo" name="correo">
+        <br>
+        <label for="id_genero">Genero:</label>
+        <br>
+        <input type="radio" name="genero">Masculino
+        <br>
+        <input type="radio" name="genero">Femenino
+        <br>
+        <input type="checkbox" name="coches">Renault
+        <input type="checkbox" name="coches">Ford
+        <input type="checkbox" name="coches">Mercedes
+
+        <select name="lenguajes" id="id_lenguajes">
+            <option value="js">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="java" selected="selected">Java</option>
+            <option value="c++">C++</option>
+            <option value="pyton">Pyton</option>
+        </select>
+        <input type="file" name="archivo">
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+</form>
+
+</body>
+</html>

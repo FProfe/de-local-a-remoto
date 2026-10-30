@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · SysRed Soporte</title>
+  <meta name="description" content="Soporte técnico, redes y mantenimiento para pymes.">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a href="#contenido" class="saltar">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a href="index.html" class="logo">SysRed<span>Soporte</span></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="quienes.html">Quiénes somos</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor" id="contenido">
+    <h1>Alta de incidencia</h1>
+    <p>Cuéntanos qué ocurre y te respondemos según tu plan de soporte.</p>
+    <form class="formulario" action="#" method="post">
+      <fieldset>
+        <legend>Datos de contacto</legend>
+    
+        <div class="campo">
+          <label for="nombre">Nombre y apellidos</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </div>
+    
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+    
+        <div class="campo">
+          <label for="tel">Teléfono</label>
+          <input type="tel" id="tel" name="tel" pattern="[6-9][0-9]{8}" placeholder="612345678">
+          <small>9 cifras, sin espacios.</small>
+        </div>
+      </fieldset>
+    
+      <fieldset>
+        <legend>La incidencia</legend>
+    
+        <div class="campo">
+          <label for="tipo">Tipo de problema</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Elige una opción</option>
+            <option value="red">Red o Wi-Fi</option>
+            <option value="equipo">Equipo o periférico</option>
+            <option value="correo">Correo electrónico</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+    
+        <div class="campo">
+          <span class="etiqueta">Prioridad</span>
+          <label class="opcion"><input type="radio" name="prioridad" value="baja" checked> Baja</label>
+          <label class="opcion"><input type="radio" name="prioridad" value="media"> Media</label>
+          <label class="opcion"><input type="radio" name="prioridad" value="alta"> Alta: no podemos trabajar</label>
+        </div>
+    
+        <div class="campo">
+          <label for="descripcion">Describe qué ocurre</label>
+          <textarea id="descripcion" name="descripcion" rows="5" maxlength="1000" required></textarea>
+        </div>
+    
+        <label class="opcion">
+          <input type="checkbox" name="rgpd" required>
+          Acepto la política de privacidad
+        </label>
+      </fieldset>
+    
+      <button type="submit" class="boton">Enviar incidencia</button>
+    </form>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>&copy; 2026 SysRed Soporte · <a href="mailto:info@sysred.example">info@sysred.example</a></p>
+    </div>
+  </footer>
+</body>
+</html>

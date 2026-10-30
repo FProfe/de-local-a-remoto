@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SysRed Soporte · versión Bootstrap</title>
+  <!-- 1. Bootstrap (copiar el enlace con integrity desde getbootstrap.com) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <!-- 2. Nuestros ajustes SIEMPRE después, para poder sobrescribir -->
+  <link rel="stylesheet" href="css/bootstrap-sysred.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-sysred sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index-bs.html">SysRed <span class="fw-normal">Soporte</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index-bs.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto-bs.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-lg-7">
+        <h1 class="display-5 fw-bold">Tu red funcionando, sin sustos</h1>
+        <p class="lead">Soporte técnico, redes y mantenimiento para pymes.</p>
+        <a href="contacto.html" class="btn btn-primary btn-lg">Abrir una incidencia</a>
+      </div>
+      <div class="col-12 col-lg-5">
+        <img src="img/portada.jpg" class="img-fluid rounded-3 shadow" alt="Técnica revisando un armario de red">
+      </div>
+    </div>
+
+  </main>
+  <section class="container py-5">
+    <h2 class="mb-4">Servicios</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 card-sysred">
+          <div class="card-body d-flex flex-column">
+            <h3 class="card-title h5">Redes y Wi-Fi</h3>
+            <p class="card-text">Cableado estructurado, VLAN y cobertura Wi-Fi medida.</p>
+            <a href="contacto-bs.html" class="btn btn-primary mt-auto align-self-start">Solicitar</a>
+          </div>
+        </article>
+      </div>
+      <!-- 2 tarjetas más -->
+    </div>
+  </section>
+  
+  <section class="container pb-5">
+    <h2 class="mb-4">Preguntas frecuentes</h2>
+    <div class="accordion" id="faq">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+            ¿Atendéis fuera de horario?
+          </button>
+        </h3>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+          <div class="accordion-body">Sí, en el plan Premium con guardia de 8:00 a 22:00.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    /*background-image: url("/img/Zelda.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;*/
+
+}
+p{
+    border-style: dashed;
+    border-color: green;
+    border-width: 20px;
+    border-radius: 20px;
+    
+}
+
+h1,h3{
+    background-color: blueviolet;
+    color: azure;
+}
+
+#especial{
+    background-color: chartreuse;
+}
+
+#especial:hover{
+    background-color: blue;
+}
+
+p:hover{
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    text-shadow: 2px 3px blue;
+}
+
+tr{
+   background-color: red; 
+}
+
+tr:nth-child(odd){
+    background-color: aqua;
+}
+td:hover{
+    background-color: black;
+    color: white;
+}

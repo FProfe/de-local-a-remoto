@@ -1,0 +1,11 @@
+Kit de partida SysRed Soporte · LMSGI 1.º ASIR · 1.er trimestre 2026-2027
+
+Estado final de referencia al terminar S11 (bloques 1-8 de estilos.css).
+Para entregar al alumnado en S1-S4, recorta estilos.css hasta el bloque 4.
+
+- index.html, servicios.html, quienes.html, contacto.html: web con CSS propio.
+- index-bs.html + css/bootstrap-sysred.css: versión Bootstrap 5.3 (necesita conexión
+  a internet: carga Bootstrap desde el CDN jsDelivr).
+- contacto-bs.html no se incluye: es la práctica autónoma de S10.
+- img/: imágenes de relleno; sustituir por fotos reales con el mismo nombre.
+- README.md: plantilla que cada pareja completa en S11.

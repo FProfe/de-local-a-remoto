@@ -1,0 +1,47 @@
+/* bootstrap-sysred.css · Bootstrap 5.3 con los colores de SysRed */
+:root {
+  --bs-primary: #0e7c86;
+  --bs-primary-rgb: 14, 124, 134;
+  --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --bs-body-color: #1e293b;
+  --bs-body-bg: #f8fafc;
+  --bs-border-radius: 8px;
+  --bs-link-color-rgb: 14, 124, 134;
+  --bs-link-hover-color-rgb: 10, 93, 100;
+}
+
+/* Los botones usan variables propias: se ajustan aquí */
+.btn-primary {
+  --bs-btn-bg: #0e7c86;
+  --bs-btn-border-color: #0e7c86;
+  --bs-btn-hover-bg: #0a5d64;
+  --bs-btn-hover-border-color: #0a5d64;
+  --bs-btn-active-bg: #0a5d64;
+  --bs-btn-focus-shadow-rgb: 14, 124, 134;
+}
+
+h1, h2, h3, .display-5 { color: #1f3a5f; }
+
+/* Componentes con la marca SysRed */
+.navbar-sysred {
+  background: #1f3a5f;
+  --bs-navbar-nav-link-padding-x: .9rem;  /* relleno lateral de los enlaces, sin !important */
+}
+.navbar-sysred .navbar-brand span { color: #7dd3d8; }
+.navbar-sysred .nav-link { color: #e2e8f0; border-radius: 6px; }
+.navbar-sysred .nav-link:hover,
+.navbar-sysred .nav-link.active { color: #fff; background: rgb(255 255 255 / .12); }
+
+.card-sysred { border: 1px solid #dbe2ea; transition: transform .2s, box-shadow .2s; }
+.card-sysred:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgb(15 23 42 / .12); }
+
+.accordion {
+  --bs-accordion-active-bg: #e6f4f5;
+  --bs-accordion-active-color: #0a5d64;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgb(14 124 134 / .25);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #0e7c86;
+  box-shadow: 0 0 0 .25rem rgb(14 124 134 / .2);
+}

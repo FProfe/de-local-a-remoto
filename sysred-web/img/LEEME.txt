@@ -1,0 +1,5 @@
+Coloca aquí las imágenes que usan las páginas:
+- switch-24.jpg (400x260)
+- ana.jpg (300x300)
+- portada.jpg
+Usa nombres en minúsculas, sin tildes ni espacios.
